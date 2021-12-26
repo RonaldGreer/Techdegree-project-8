@@ -25,6 +25,10 @@ body {
     padding: 30px 20px;
 }
 
+.modalavatar {
+    border-radius: 60px;
+}
+
 .modal-close {
     position: absolute;
     right: 15px;
@@ -49,6 +53,10 @@ body {
 
 /*CONTENT*/
 
+p {
+    color: grey;
+}
+
 .card {
     display: grid;
     grid-template-columns: 170px 170px;
@@ -71,5 +79,10 @@ body {
     /*display: flex;
     flex-direction: column;
     /*justify-content: space-evenly;*/
+    padding-top: 10px;
     grid-area: textbox;
+}
+
+.modal-close {
+    text-decoration: none;
 }
