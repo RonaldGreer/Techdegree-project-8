@@ -1,6 +1,9 @@
 body {
     position: relative;
+    font-family: 'Nunito', sans-serif;
 }
+
+/*MODAL*/
 
 .overlay {
     position: absolute;
@@ -31,4 +34,42 @@ body {
 
 .hidden {
     display: none;
+}
+
+/*GRID-CONTAINER*/
+
+.grid-container {
+    display: grid; 
+    /*grid-template-columns: 400px 400px 400px;*/
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 25% 25% 25% 25%;
+    column-gap: 20px;
+    row-gap: 17px;
+}
+
+/*CONTENT*/
+
+.card {
+    display: grid;
+    grid-template-columns: 170px 170px;
+    /*grid-template-columns: 130px 200px;*/
+    column-gap: 10px;
+    grid-template-areas: 
+    "avatar textbox";
+    border: 2px solid lightgrey;
+    border-radius: 12px;
+}
+
+.avatar {
+    margin-top: 22px;
+    margin-left: 23px;
+    border-radius: 60px;
+    grid-area: avatar;
+}
+
+.text-container {
+    /*display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+    grid-area: textbox;
 }

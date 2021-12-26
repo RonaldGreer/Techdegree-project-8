@@ -6,7 +6,7 @@ const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
 
 fetch(urlAPI)
-    .then(res => res.join())
+    .then(res => res.json())
     .then(res => res.results)
     .then(displayEmployees)
     .catch(err => console.log(err))
