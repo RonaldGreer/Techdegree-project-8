@@ -63,7 +63,7 @@ p {
 
 .card {
     display: grid;
-    grid-template-columns: 170px 170px;
+    grid-template-columns: 1fr 2fr;
     /*grid-template-columns: 130px 200px;*/
     column-gap: 10px;
     grid-template-areas: 
